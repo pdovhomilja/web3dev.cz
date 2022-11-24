@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { sanityClient, urlFor } from "../sanity";
@@ -20,22 +21,7 @@ export default function Home({ posts }: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:p-0">
-        <div className="p-16 space-y-5">
-          <h1 className="text-6xl max-w-xl font-serif">
-            veškeré know-how o vývoji
-            <span className="px-3 underline decoration-black decoration-4">
-              Web3
-            </span>{" "}
-            jednom místě
-          </h1>
-          <h2>
-            rady a tipy pro začátečníky ale i pokročilé. Vše popasané tak jak
-            jsme sami studovali. Veškeré dosupené know-how na jednom místě.
-          </h2>
-        </div>
-        <p className="text-8xl font-bold p-20 pr-22">W3D</p>
-      </div>
+      <Banner />
       {/* Posts */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 lg:p-6">
         {posts.map((post) => (

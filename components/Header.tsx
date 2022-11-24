@@ -12,8 +12,12 @@ function Header({}: Props) {
           WEB3DEV
         </Link>
         <div className="hidden md:inline-flex items-center space-x-5">
-          <h3>O nás</h3>
-          <h3>Kontakt</h3>
+          <h3>
+            <Link href="/aboutus">O nás</Link>
+          </h3>
+          <h3>
+            <Link href="/contact"> Kontakt</Link>
+          </h3>
           <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">
             Follow
           </h3>

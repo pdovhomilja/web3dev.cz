@@ -5,7 +5,6 @@ import { Post } from "../../typings";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-import Footer from "../../components/Footer";
 
 interface IFormInput {
   _id: string;
@@ -178,7 +177,6 @@ function Post({ post }: Props) {
             </div>
           ))}
         </div>
-        <Footer />
       </>
     </main>
   );
