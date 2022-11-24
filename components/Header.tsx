@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,12 +8,8 @@ function Header({}: Props) {
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
       <div className="flex items-center space-x-5">
-        <Link href="/">
-          <img
-            className=" object-contain cursor-pointer w-44"
-            src="https://links.papareact.com/yvf"
-            alt="Medium logo"
-          />
+        <Link className="font-bold text-lg text-white bg-black p-3" href="/">
+          WEB3DEV
         </Link>
         <div className="hidden md:inline-flex items-center space-x-5">
           <h3>O nás</h3>
