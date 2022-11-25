@@ -78,7 +78,7 @@ function Contact({}: Props) {
                   setPhone(e.target.value);
                 }}
                 className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
-                placeholder="jmeno@domena.cz"
+                placeholder="+420 ...."
                 type="text"
                 name="phone"
               />
