@@ -19,6 +19,11 @@ export default function Home({ posts }: Props) {
       <Head>
         <title>Web3dev - blog</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="
+          veškeré know-how o vývoji Web3 na jednom místě. Rady a tipy pro začátečníky ale i pokročilé. Vše popasané tak jak jsme sami studovali. Veškeré dosupené know-how na jednom místě."
+        />
       </Head>
       <Header />
       <Banner />
