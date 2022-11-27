@@ -76,10 +76,13 @@ function Post({ post }: Props) {
               content={post.body}
               serializers={{
                 h1: (props: any) => (
-                  <h1 className="text-2xl font-bold my-5" {...props} />
+                  <h1 className="text-2xl font-bold my-5 pb-2" {...props} />
                 ),
                 h2: (props: any) => (
-                  <h2 className="text-xl font-bold my-5" {...props} />
+                  <h2 className="text-xl font-bold my-5 pb-2" {...props} />
+                ),
+                h3: (props: any) => (
+                  <h3 className="font-bold my-5 pb-2" {...props} />
                 ),
                 li: ({ children }: any) => (
                   <li className="ml-4 list-disc">{children} </li>
@@ -121,7 +124,7 @@ function Post({ post }: Props) {
               <input
                 {...register("name", { required: true })}
                 className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
-                placeholder="John Doe"
+                placeholder="Josef Novák"
                 type="text"
               />
             </label>
@@ -130,7 +133,7 @@ function Post({ post }: Props) {
               <input
                 {...register("email", { required: true })}
                 className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
-                placeholder="John Doe"
+                placeholder="jméno@domena.cz"
                 type="email"
               />
             </label>
@@ -139,7 +142,7 @@ function Post({ post }: Props) {
               <textarea
                 {...register("comment", { required: true })}
                 className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 outline-none focus:ring"
-                placeholder="John Doe"
+                placeholder="Místo pro Váš komentář"
                 rows={8}
               />
             </label>
